@@ -16,8 +16,7 @@ def dict_foo(): #Creates a dictionary list
     word_dict_list = []
     with open('words_alpha.txt') as dict_file:
         for word in dict_file.readlines():
-            word_dict = word.rstrip('\n')
-            word_dict_list.append(word_dict)
+            word_dict_list.append(word.rstrip('\n'))
     return word_dict_list
 
 def word_check(word_list,word_dict_list):# Checks out for meaningful words
