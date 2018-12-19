@@ -8,14 +8,9 @@ Handle: @Psyche
 import sys,time,traceback,itertools
 
 def word_list_foo(letter): #Creates a word list from letters passed
-    letter_formed = ''.join(letter)
-    foo = itertools.permutations(letter_formed)
-    element=[]
-    for items in foo:
-        word = ''.join(items)
-        element.append(word)
-    word_list=list(set(element)) #handles repititions in the list
-    return word_list
+    foo = itertools.permutations(''.join(letter))
+    element=[''.join(item) for item in foo]
+    return list(set(element))
 
 def dict_foo(): #Creates a dictionary list
     word_dict_list = []
