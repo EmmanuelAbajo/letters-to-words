@@ -47,7 +47,7 @@ def single_selection_gen(letter):
     time.sleep(2)
     print('loading...')
     if first_letter in letter:
-        letter_1 = letter.pop(letter.index(first_letter))
+        letter.pop(letter.index(first_letter))
     else:
         print("Sorry, letter not found in list of letters parsed")
         sys.exit(0)
@@ -68,8 +68,8 @@ def selection_gen(letter):
     time.sleep(2)
     print('loading...')
     if first_letter in letter and last_letter in letter:
-        letter_1 = letter.pop(letter.index(first_letter))
-        letter_2 = letter.pop(letter.index(last_letter))
+        letter.pop(letter.index(first_letter))
+        letter.pop(letter.index(last_letter))
     else:
         print("Letter specified not in letters passed")
         sys.exit(0)
