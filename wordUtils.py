@@ -7,7 +7,6 @@ def gen_word_list(letter):
     return set(element)
 
 # Checks if words exist in dictionary
-def do_word_check(word_list,word_dict_list):
+def get_word_from_dict(word_list,word_dict_list):
     wordFound = [i for i in word_list if i in word_dict_list]
     return wordFound
-    
